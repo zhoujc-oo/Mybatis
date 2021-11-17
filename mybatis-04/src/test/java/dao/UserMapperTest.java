@@ -14,14 +14,21 @@ import java.util.List;
  */
 public class UserMapperTest {
     @Test
-    public void test(){
+    public void test() {
         SqlSession sqlSession = MybatisUtils.getSqlSession();
         UserMapper mapper = sqlSession.getMapper(UserMapper.class);
 
-        List<User> users = mapper.getUsers();
-        for (User user : users){
-            System.out.println(user);
-        }
-        sqlSession.close();
+
+        mapper.deleteUser(3);
+
+//        User user = mapper.getUserById(1,"狂神");
+//        System.out.println(user);
+
+
+//        List<User> users = mapper.getUsers();
+//        for (User user : users) {
+//            System.out.println(user);
+//            sqlSession.close();
+//        }
     }
 }
