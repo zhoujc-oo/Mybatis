@@ -19,7 +19,10 @@ public class UserMapperTest {
         UserMapper mapper = sqlSession.getMapper(UserMapper.class);
 
 
-        mapper.deleteUser(3);
+//        mapper.deleteUser(3);
+
+
+        mapper.addUser(new User(14,"jasjd","aksjd"));
 
 //        User user = mapper.getUserById(1,"狂神");
 //        System.out.println(user);
