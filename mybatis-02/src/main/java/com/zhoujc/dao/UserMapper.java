@@ -20,7 +20,7 @@ public interface UserMapper {
     int addUser(User user);
 
     //修改用户
-    int updateUser(User user);
+    int updateUser(int id);
 
     //删除一个用户
     int deleteUser(int id);

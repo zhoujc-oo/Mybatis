@@ -5,7 +5,6 @@
 
 <mapper namespace="com.zhoujc.dao.BlogMapper">
 
-
     <sql id="if-title-author">
         <if test="title != null">
             and title =#{title}

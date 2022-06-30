@@ -1,6 +1,7 @@
 import com.zhoujc.dao.TeacherMapper;
 import com.zhoujc.pojo.Teacher;
 import com.zhoujc.utils.MybatisUtils;
+import lombok.Data;
 import org.apache.ibatis.session.SqlSession;
 import org.junit.Test;
 
@@ -8,6 +9,7 @@ import org.junit.Test;
  * @Author zhoujc
  * @Date 2021/11/16
  */
+
 public class MyTest {
 
     @Test

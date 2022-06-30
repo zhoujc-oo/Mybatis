@@ -53,7 +53,7 @@ public class UserDaoTest {
 
         UserMapper mapper = sqlSession.getMapper(UserMapper.class);
 
-        mapper.addUser(new User(4, "周嘉城", "12333"));
+//        mapper.addUser(new User(4, "周嘉城", "12333"));
 
         sqlSession.commit();
         sqlSession.close();
@@ -81,7 +81,7 @@ public class UserDaoTest {
         SqlSession sqlSession = MybatisUtils.getSqlSession();
         UserMapper mapper = sqlSession.getMapper(UserMapper.class);
 
-        mapper.updateUser(new User(3, "中加大", "2323482"));
+//        mapper.updateUser(new User(3, "中加大", "2323482"));
 
 
         sqlSession.commit();

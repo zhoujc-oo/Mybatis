@@ -22,10 +22,8 @@ public class UserMapperTest {
 //        mapper.deleteUser(3);
 
 
-        mapper.addUser(new User(14,"jasjd","aksjd"));
-
-//        User user = mapper.getUserById(1,"狂神");
-//        System.out.println(user);
+        User user = mapper.getUserById(2, "微博");
+        System.out.println(user);
 
 
 //        List<User> users = mapper.getUsers();

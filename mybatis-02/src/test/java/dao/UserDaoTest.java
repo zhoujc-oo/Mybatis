@@ -1,15 +1,13 @@
 package dao;
 
 
-import org.apache.ibatis.session.SqlSession;
-import org.junit.Test;
 import com.zhoujc.dao.UserMapper;
 import com.zhoujc.pojo.User;
 import com.zhoujc.utils.MybatisUtils;
+import org.apache.ibatis.session.SqlSession;
+import org.junit.Test;
 
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 
 /**
@@ -46,7 +44,7 @@ public class UserDaoTest {
 
         UserMapper mapper = sqlSession.getMapper(UserMapper.class);
 
-        User user = mapper.getUserById(1);
+        User user = mapper.getUserById(10);
         System.out.println(user);
 
         sqlSession.close();
@@ -58,7 +56,7 @@ public class UserDaoTest {
 
         UserMapper mapper = sqlSession.getMapper(UserMapper.class);
 
-        mapper.addUser(new User(4, "周嘉城", "12333"));
+        mapper.addUser(new User( 13,"科幻","科技史" ,"就一个字牛"));
 
         sqlSession.commit();
         sqlSession.close();
@@ -69,7 +67,7 @@ public class UserDaoTest {
         SqlSession sqlSession = MybatisUtils.getSqlSession();
         UserMapper mapper = sqlSession.getMapper(UserMapper.class);
 
-        mapper.updateUser(new User(4, "去你妈", "237482"));
+        mapper.updateUser(13);
 
 
         sqlSession.commit();
